@@ -29,13 +29,13 @@ public class DialogueManager : MonoBehaviour
 
     void OnEnable()
     {
-        GameManager.OnStartGame += StartDialogue;
+        GameManager.OnGameStart += StartDialogue;
         LenguageManager.OnLenguageChanged += ChangeLenguage;
     }
 
     void OnDisable()
     {
-        GameManager.OnStartGame -= StartDialogue;
+        GameManager.OnGameStart -= StartDialogue;
         LenguageManager.OnLenguageChanged -= ChangeLenguage;
     }
 

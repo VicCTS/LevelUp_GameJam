@@ -29,5 +29,7 @@ public class LenguageManager : MonoBehaviour
     {
         string lenguage = File.ReadAllText(Application.streamingAssetsPath + "/" + lenguageToLoad + ".json");
         lenguageData = JsonUtility.FromJson<LenguageData>(lenguage);
+
+        OnLenguageChanged();
     }
 }
