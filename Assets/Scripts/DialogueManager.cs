@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance{get; private set;}
+
+    public static event Action OnAnswerWaiting;
 
     [SerializeField] string[] textLines;
     [SerializeField] int lineIndex = 0;
@@ -27,11 +30,13 @@ public class DialogueManager : MonoBehaviour
     void OnEnable()
     {
         GameManager.OnStartGame += StartDialogue;
+        LenguageManager.OnLenguageChanged += ChangeLenguage;
     }
 
     void OnDisable()
     {
         GameManager.OnStartGame -= StartDialogue;
+        LenguageManager.OnLenguageChanged -= ChangeLenguage;
     }
 
     void Awake()
@@ -44,6 +49,18 @@ public class DialogueManager : MonoBehaviour
         { 
             Instance = this; 
         }
+    }
+
+    void Start()
+    {
+        ChangeLenguage();
+    }
+
+    void ChangeLenguage()
+    {
+        textLines = LenguageManager.Instance.lenguageData.textLines;
+        answersLines0 = LenguageManager.Instance.lenguageData.answers[0].answerLines;
+        answersLines1 = LenguageManager.Instance.lenguageData.answers[1].answerLines;
     }
 
     void StartDialogue()
@@ -68,6 +85,8 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.Log("Esperando respuesta simple");
 
+            OnAnswerWaiting();
+
             GameManager.Instance.currentState = GameManager.GameState.Question;
 
             foreach (GameObject answer in answers0)
@@ -80,6 +99,8 @@ public class DialogueManager : MonoBehaviour
         else if(lineIndex == 4)
         {
             Debug.Log("Esperando respuesta multiple");
+
+            OnAnswerWaiting();
 
             GameManager.Instance.currentState = GameManager.GameState.Question;
 

@@ -1,0 +1,36 @@
+{
+    "textLines": [
+        "Linea 1 Test",
+        "Linea 2 Test",
+        "Pregunta simple Test",
+        "Linea 3 Test",
+        "Pregunta multiple Test",
+        "Linea Final Test"
+    ],
+    "options": [
+        {
+            "optionsLines": [
+                "Opcion 1 Test"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Opcion 2A Test",
+                "Opcion 2B Test"
+            ]
+        }
+    ],
+    "answers": [
+        {
+            "answerLines": [
+                "Respuesta 1 Test"
+            ]
+        },
+        {
+            "answerLines": [
+                "Respuesta 2A Test",
+                "Respuesta 2B Test"
+            ]
+        }
+    ]
+}

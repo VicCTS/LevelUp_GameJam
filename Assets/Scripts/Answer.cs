@@ -2,29 +2,51 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Answer : MonoBehaviour
 {
+    public static event Action OnAnswerSelected;
+
     [SerializeField] int questionNumber;
-    [SerializeField] string answer;
-    [SerializeField] int answerNumber;
+    [SerializeField] string option;
+    [SerializeField] int optionNumber;
 
-    [SerializeField] GameObject[] answerObjects;
+    [SerializeField] GameObject[] optionObjects;
 
+    [SerializeField] GameObject canvas;
     [SerializeField] Text textUI;
+
+    void Start()
+    {
+        ChangeLenguage();
+    }
+
+    void ChangeLenguage()
+    {
+        option = LenguageManager.Instance.lenguageData.options[questionNumber].optionsLines[optionNumber];
+    }
 
     public void ShowAnswer()
     {
-        textUI.text = answer;
+        canvas.SetActive(true);
+        textUI.text = option;
+    }
+
+    public void HideAnswer()
+    {
+        canvas.SetActive(false);
     }
 
     public void AnswerQuestion()
     {
+        OnAnswerSelected();
+
         GameManager.Instance.currentState = GameManager.GameState.Talking;
 
-        DialogueManager.Instance.StartAnswer(questionNumber, answerNumber);
+        DialogueManager.Instance.StartAnswer(questionNumber, optionNumber);
 
-        foreach (GameObject item in answerObjects)
+        foreach (GameObject item in optionObjects)
         {
             item.SetActive(false);
         }

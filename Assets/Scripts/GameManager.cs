@@ -22,6 +22,18 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject menuCanvas;
     [SerializeField] GameObject inGameCanvas;
 
+    void OnEnable()
+    {
+        Answer.OnAnswerSelected += ShowInGameCanvas;
+        DialogueManager.OnAnswerWaiting += HideInGameCanvas;
+    }
+
+    void OnDisable()
+    {
+        Answer.OnAnswerSelected -= ShowInGameCanvas;
+        DialogueManager.OnAnswerWaiting -= HideInGameCanvas;
+    }
+
     void Awake()
     {
         if (Instance != null && Instance != this) 
@@ -47,8 +59,18 @@ public class GameManager : MonoBehaviour
         currentState = GameState.Talking;
 
         menuCanvas.SetActive(false);
-        inGameCanvas.SetActive(true);
+        ShowInGameCanvas();
 
         OnStartGame();
+    }
+
+    public void HideInGameCanvas()
+    {
+        inGameCanvas.SetActive(false);
+    }
+
+    public void ShowInGameCanvas()
+    {
+        inGameCanvas.SetActive(true);
     }
 }

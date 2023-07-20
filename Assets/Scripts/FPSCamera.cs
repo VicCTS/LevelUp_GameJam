@@ -12,7 +12,7 @@ public class FPSCamera : MonoBehaviour
     [SerializeField] Vector2 xLimit;
     [SerializeField] Vector2 yLimit;
 
-    bool answerShowed = false;
+    Answer lastAnswerSelected;
 
     void Awake()
     {
@@ -71,21 +71,18 @@ public class FPSCamera : MonoBehaviour
 
             if(answerObject != null)
             {
-                if(!answerShowed)
-                {
-                    answerObject.ShowAnswer();
-                    answerShowed = true;
-                }
-                
+                lastAnswerSelected = answerObject;
+
+                answerObject.ShowAnswer();
 
                 if(Input.GetMouseButtonDown(0))
                 {
                     answerObject.AnswerQuestion();
                 }
             }
-            else
+            else if(answerObject == null && lastAnswerSelected != null)
             {
-                answerShowed = false;
+                lastAnswerSelected.HideAnswer();
             }
         }
     }
