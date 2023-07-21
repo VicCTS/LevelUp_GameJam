@@ -22,6 +22,11 @@ public class LenguageManager : MonoBehaviour
             Instance = this; 
         }
 
+        //LoadLenguage("Spanish");
+    }
+
+    void Start()
+    {
         LoadLenguage("Spanish");
     }
 

@@ -42,7 +42,7 @@ public class FPSCamera : MonoBehaviour
         float yPosition = fpsCamera.rotation.eulerAngles.y;
 
         float lerpedXPosition = Mathf.Lerp(xPosition, 0, 0.1f);
-        float lerpedYPosition = Mathf.Lerp(yPosition, 90, 0.1f);
+        float lerpedYPosition = Mathf.Lerp(yPosition, 180, 0.1f);
 
         fpsCamera.rotation = Quaternion.Euler(lerpedXPosition, lerpedYPosition, 0);
     }

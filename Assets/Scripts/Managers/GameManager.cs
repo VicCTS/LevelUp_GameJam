@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using System;
 
 public class GameManager : MonoBehaviour
@@ -27,18 +28,20 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject _menuCamera;
     [SerializeField] GameObject _mainCamera;
 
+    [SerializeField] PlayableDirector _timeLine;
+
     void OnEnable()
     {
         Answer.OnAnswerSelected += Show_inGameCanvas;
         DialogueManager.OnAnswerWaiting += Hide_inGameCanvas;
-        CanvasFade.OnBlackFadeInFinished += DisableMenu;
+        CanvasFade.OnBlackFadeInFinished += StartTimeLine;
     }
 
     void OnDisable()
     {
         Answer.OnAnswerSelected -= Show_inGameCanvas;
         DialogueManager.OnAnswerWaiting -= Hide_inGameCanvas;
-        CanvasFade.OnBlackFadeInFinished += DisableMenu;
+        CanvasFade.OnBlackFadeInFinished += StartTimeLine;
     }
 
     void Awake()
@@ -68,6 +71,8 @@ public class GameManager : MonoBehaviour
         _fadeCanvas.SetActive(true);
 
         OnIntroStart();
+
+        _timeLine.Play();
     }
 
     public void StartGame()
@@ -85,12 +90,14 @@ public class GameManager : MonoBehaviour
         OnGameStart();
     }
 
-    void DisableMenu()
+    void StartTimeLine()
     {
         _menuCanvas.SetActive(false);
         
         _menuCamera.SetActive(false);
         _mainCamera.SetActive(true);
+
+        
     }
 
     public void Hide_inGameCanvas()
