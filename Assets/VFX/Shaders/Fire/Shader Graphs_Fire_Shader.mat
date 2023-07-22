@@ -52,7 +52,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphaPower: 1.11
+    - _AlphaPower: 1.13
     - _Distorsion_Strength: 0.08
     - _NoiseScale: 9.38
     - _QueueControl: 0
