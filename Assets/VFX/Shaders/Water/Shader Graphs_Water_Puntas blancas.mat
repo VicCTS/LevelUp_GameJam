@@ -56,16 +56,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ALphaPuntasBlancas: -1.01
+    - _ALphaPuntasBlancas: -0.2
     - _Displacement: 0.03
     - _Metalic: 1
-    - _PowerAlpha: 5
-    - _PowerBlancoPuntas: 12.51
+    - _PowerAlpha: 24.5
+    - _PowerBlancoPuntas: -0.83
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smooth: 0.7
+    - _Smooth: 0.723
     m_Colors:
-    - _ColorGlow: {r: 0.1552862, g: 1.2090139, b: 1.4197595, a: 1}
-    - _Scrolling_speed: {r: 0.15, g: 0.3, b: 0, a: 0}
+    - _ColorGlow: {r: 0.15609922, g: 1.2116272, b: 1.4197595, a: 1}
+    - _Scrolling_speed: {r: 0.15, g: -0.3, b: 0, a: 0}
     - _Tilling: {r: 2, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []
