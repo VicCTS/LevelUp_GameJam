@@ -18,8 +18,9 @@ public class LenguageGenerator : MonoBehaviour
 [System.Serializable]
 public class LenguageData
 {
-    /*public string[] mainMenuButtons;
-    public string[] lenguageButtons;*/
+    public string[] mainMenuButtons;
+    public string[] optionMenuButtons;
+    public string[] creditsMenuButtons;
     public string[] textLines;
     public Options[] options;
     public Answers[] answers;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System;
+using UnityEngine.UI;
 
 public class LenguageManager : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class LenguageManager : MonoBehaviour
 
     public static event Action OnLenguageChanged;
     public LenguageData lenguageData = new LenguageData();
+
+    public Text[] mainMenuButtonsText;
+    public Text[] optionsMenuTexts;
+    public Text[] creditsMenuTexts;
 
     void Awake()
     {
@@ -23,6 +28,9 @@ public class LenguageManager : MonoBehaviour
         }
 
         //LoadLenguage("Spanish");
+
+        string lenguage = File.ReadAllText(Application.streamingAssetsPath + "/Spanish.json");
+        lenguageData = JsonUtility.FromJson<LenguageData>(lenguage);
     }
 
     void Start()
@@ -34,6 +42,16 @@ public class LenguageManager : MonoBehaviour
     {
         string lenguage = File.ReadAllText(Application.streamingAssetsPath + "/" + lenguageToLoad + ".json");
         lenguageData = JsonUtility.FromJson<LenguageData>(lenguage);
+
+        for (int i = 0; i < lenguageData.mainMenuButtons.Length; i++)
+        {
+            mainMenuButtonsText[i].text = lenguageData.mainMenuButtons[i];
+        }
+
+        for (int i = 0; i < lenguageData.optionMenuButtons.Length; i++)
+        {
+            optionsMenuTexts[i].text = lenguageData.optionMenuButtons[i];
+        }
 
         OnLenguageChanged();
     }

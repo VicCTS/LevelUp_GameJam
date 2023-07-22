@@ -1,36 +1,209 @@
 {
+    "mainMenuButtons": [
+        "Jugar",
+        "Opciones",
+        "Creditos",
+        "Salir"
+    ],
+    "optionMenuButtons": [
+        "Atras",
+        "Audio",
+        "Master",
+        "Voces",
+        "SFX",
+        "Musica",
+        "Idioma",
+        "Sensibilidad"
+    ],
+    "creditsMenuButtons": [
+        "Atras"
+    ],
     "textLines": [
-        "Linea 1 Test",
-        "Linea 2 Test",
-        "Pregunta simple Test",
-        "Linea 3 Test",
-        "Pregunta multiple Test",
-        "Linea Final Test"
+        "Esto es de locos… ¿Qué puta broma es esta?",
+        "No sé por qué te ha elegido a ti. Aunque, sinceramente, tampoco me importa.",
+        "¿Que qué hay detrás de esa puerta, dices? Lo único que sé…",
+        "es que estamos bien jodidos.",
+        "Siéntate por favor.",
+        "¿Conoces el motivo por el cuál te he citado aquí?",
+        "El motivo es muy simple.",
+        "Los Objetivos de Desarrollo Sostenible que os fijasteis para lo que llaman “Agenda 2030”, han resultado lentos e insuficientes.",
+        "Sintiendo que el estado del ecosistema os importa poco, he decidido daros una represalia grave por ello.",
+        "Mientras no obtengáis una conciencia a nivel global, los pequeños actos de fe no sanarán la herida.",
+        "\"Como no veo esa voluntad de cambio a corto plazo…  He decidido exterminar tu especie.\"",
+        "A no ser que seas capaz de convencerme de lo contrario.",
+        "Deja que te muestre algo.",
+        "\"Tu especie tiene una cognición de lo propio muy curiosa.  Creéis que todo os pertenece por derecho.  Habéis arrasado con todo lo que habéis querido y ahora lloráis por el resultado de vuestras acciones.\"",
+        "\"Lo peor es que erais perfectamente conscientes de todo ello. Sabíais como solucionar el impacto creado sobre el medio ambiente. Pero estabais demasiado ocupados echándole la culpa a cualquiera que no fueseis vosotros mismos o negándolo por completo teniendo todas las pruebas en frente.\"",
+        "\"Habéis acabado con miles de especies. Pero en cambio, yo debo que tener misericordia con la vuestra. Dime, ¿por qué debería perdonaros, ?\"",
+        "\"Creéis que mis hijos o yo misma somos el problema, el enemigo a combatir. Pero durante mucho tiempo fuimos la solución, el aliado.  No hubiéramos llegado a este punto, donde debes convencerme, si todos tus hermanos no hubieran estado mirado para otro lado durante todo este tiempo.\"",
+        "\"Cuando terminemos esta conversación y salgas de aquí, todo habrá terminado. Será vuestro final. Sin tu especie en esta tierra, el planeta podrá recuperarse y volver a empezar.\"",
+        "\"Esto no tiene ningún sentido. No tenéis salvación, no lo entenderéis jamás. No conocéis la empatía, no existe la humildad en vosotros… Sólo la desesperación por reconstruir algo que ya está roto, como el cascarón de un huevo.\"",
+        "Esto se acabó. Cada cuál recoge lo que siembra. Adiós, hijo mío.",
+        "Ahora sé lo que debo hacer.",
+        "Siéntate por favor.",
+        "¿Conoces el motivo por el cuál te he citado aquí?",
+        "Eso nos ahorrará mucho tiempo, .",
+        "Deja que te muestre algo.",
+        "\"Tu especie tiene una cognición de lo propio muy curiosa.  Creéis que todo os pertenece por derecho.  Habéis arrasado con todo lo que habéis querido y ahora lloráis por el resultado de vuestras acciones.\"",
+        "\"Intrigante… ¿No te vas a defender? Entiendes que todo esto es para convencerme, ¿verdad? De lo contrario…\"",
+        "\"No sé por qué me dejé engatusar, no debería mostrar tal piedad con vosotros.  Habéis terminado con miles de especies, pero yo, en cambio, voy a tener misericordia de una, la vuestra.  Dime, ¿por qué debería perdonaros, ?\"",
+        "Si te declaras parte de mí… Comprendes que habéis estado luchando y atacándoos a vosotros mismos, ¿no?",
+        "\"Cierto… está en vosotros. Tenéis la inteligencia, los recursos, la capacidad… pero no cooperáis.  No seguís las reglas establecidas. Pese a tener libre albedrío, os puede el egoísmo.  Por lo tanto, vuestro mayor enemigo es y siempre será…\"",
+        "\"Vuestra libertad, las decisiones y acciones que habéis tomado os han traído hasta aquí.  Si yo no quisiera ponerle punto final a este desenfreno de brutalidad, lo acabaríais poniendo vosotros tarde o temprano.\"",
+        "Sabéis lo que debéis hacer, tenéis todos los medios a vuestro alcance. Nosotros, todos juntos, somos uno.",
+        "Lo dejo en tus manos, .",
+        "Elegid como deberíais usar los recursos naturales para satisfacer las necesidades de las generaciones presentes sin comprometer las necesidades de las generaciones futuras.",
+        "Aprovechad esta oportunidad que os he brindado para mentalizaros y evitar vuestra destrucción.",
+        "Recorred vuestro propio camino y encontrad al final el resultado de vuestras acciones."
     ],
     "options": [
         {
             "optionsLines": [
-                "Opcion 1 Test"
+                "Sí",
+                "No"
             ]
         },
         {
             "optionsLines": [
-                "Opcion 2A Test",
-                "Opcion 2B Test"
+                "¿Agenda 2030?",
+                "Si, los conozco"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Hacemos lo que podemos"
+            ]
+        },
+        {
+            "optionsLines": [
+                "¿De verdad quieres destruirnos?",
+                "¿Quién eres?"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Necesitábamos esas materias primas",
+                "Era necesario para el progreso de la especie"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Ignorábamos las consecuencias de nuestros actos",
+                "Podemos revertir nuestras acciones"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Por favor, apiádate de nosotros"
+            ]
+        },
+        {
+            "optionsLines": [
+                "¿Hijo mío?"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Biosfera"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Otra oportunidad"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Sí"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Tienes razón"
+            ]
+        },
+        {
+            "optionsLines": [
+                "También somos tus hijos"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Está en nuestra naturaleza, así es como somos"
+            ]
+        },
+        {
+            "optionsLines": [
+                "El ser humano"
             ]
         }
     ],
     "answers": [
         {
+            "answerLines": []
+        },
+        {
             "answerLines": [
-                "Respuesta 1 Test"
+                "Ya veo lo conscientes que sois al respecto… Las Naciones Unidas decidisteis 17 objetivos para poner fin a la pobreza extrema, garantizar los derechos humanos y proteger el medio ambiente.",
+                ""
+            ]
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": [
+                "En realidad sois vosotros mismos los que lleváis años intentando destruiros. Yo sólo voy a poner el punto final.",
+                "\"Soy madre de la tierra que pisas. Del agua que bebes. Del aire que respiras y de los frutos que te alimentan… Soy Gaia, Te Fiti, Gea, Pachamama... Tengo muchos nombres.\""
             ]
         },
         {
             "answerLines": [
-                "Respuesta 2A Test",
-                "Respuesta 2B Test"
+                "\"Eso no lo dudo, por eso os otorgué unas fuentes abundantes. Sin embargo, ¿nunca pensasteis en devolver aquello que se os entregó? ¿Volver a plantar lo que segáis? ¿Pensáis alguna vez en las vidas que no son humanas? ¿En los animales y plantas que también me habitan?\"",
+                "Con tal de evolucionar vosotros, os da exactamente igual lo qué pase con las demás especies. Dime, ¿es este el progreso que andabais buscando y llegar al borde del colapso?"
             ]
+        },
+        {
+            "answerLines": [
+                "Por supuesto. Algo muy común en vosotros, el no afrontar el problema hasta que ya es demasiado tarde.",
+                "Interesante. ¿Y cómo pretendéis hacerlo? ¿Crees que recuperar toda una biosfera es tarea fácil?"
+            ]
+        },
+        {
+            "answerLines": [
+                "\"¡¿Cómo lo hicisteis vosotros?!  ¿¡Con las enfermedades generadas por la contaminación, el deshielo de los casquetes polares y la subida del nivel del mar, la deforestación o la caza y extinción de especies?!\""
+            ]
+        },
+        {
+            "answerLines": [
+                "\"¿Cómo no he caído antes?  Formo parte de ella. Los humanos fuimos creados gracias a ella también.\""
+            ]
+        },
+        {
+            "answerLines": [
+                "Pertenecemos a la biosfera, formamos parte de ella. También nos hemos destruido a nosotros mismos luchando entre nosotros. Contra nosotros y nuestro hogar"
+            ]
+        },
+        {
+            "answerLines": [
+                "\"Querías que te convenciera, que nos dieras otra oportunidad.  Pero no somos ajenos a la naturaleza, nosotros formamos parte de ella.  Parte de ti.\"",
+                "Si a la naturaleza y al planeta les vas a dar otra oportunidad… A nosotros también deberías dárnosla."
+            ]
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": []
         }
     ]
 }

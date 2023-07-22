@@ -523,220 +523,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1242983188
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1242983189}
-  - component: {fileID: 1242983191}
-  - component: {fileID: 1242983190}
-  m_Layer: 5
-  m_Name: Text (Legacy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1242983189
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242983188}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1409662690}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1242983190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242983188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Button
---- !u!222 &1242983191
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242983188}
-  m_CullTransparentMesh: 1
---- !u!1 &1409662689
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1409662690}
-  - component: {fileID: 1409662693}
-  - component: {fileID: 1409662692}
-  - component: {fileID: 1409662691}
-  m_Layer: 5
-  m_Name: Button (Legacy) (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1409662690
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409662689}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1242983189}
-  m_Father: {fileID: 1554627397}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -150}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1409662691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409662689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1409662692}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LenguageManager, Assembly-CSharp
-        m_MethodName: LoadLenguage
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1409662692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409662689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1409662693
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409662689}
-  m_CullTransparentMesh: 1
 --- !u!1 &1554627393
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,7 +616,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 742782491}
-  - {fileID: 1409662690}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -869,25 +654,179 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lenguageData:
+    mainMenuButtons:
+    - Jugar
+    - Opciones
+    - Creditos
+    - Salir
+    optionMenuButtons:
+    - Atras
+    - Audio
+    - Master
+    - Voces
+    - SFX
+    - Musica
+    - Sensibilidad
+    creditsMenuButtons:
+    - Atras
     textLines:
-    - Linea 1 Test
-    - Linea 2 Test
-    - Pregunta simple Test
-    - Linea 3 Test
-    - Pregunta multiple Test
-    - Linea Final Test
+    - "Esto es de locos\u2026 \xBFQu\xE9 puta broma es esta?"
+    - "No s\xE9 por qu\xE9 te ha elegido a ti. Aunque, sinceramente, tampoco me importa."
+    - "\xBFQue qu\xE9 hay detr\xE1s de esa puerta, dices? Lo \xFAnico que s\xE9\u2026"
+    - es que estamos bien jodidos.
+    - "Si\xE9ntate por favor."
+    - "\xBFConoces el motivo por el cu\xE1l te he citado aqu\xED?"
+    - El motivo es muy simple.
+    - "Los Objetivos de Desarrollo Sostenible que os fijasteis para lo que llaman
+      \u201CAgenda 2030\u201D, han resultado lentos e insuficientes."
+    - Sintiendo que el estado del ecosistema os importa poco, he decidido daros una
+      represalia grave por ello.
+    - "Mientras no obteng\xE1is una conciencia a nivel global, los peque\xF1os actos
+      de fe no sanar\xE1n la herida."
+    - "\"Como no veo esa voluntad de cambio a corto plazo\u2026  He decidido exterminar
+      tu especie.\""
+    - A no ser que seas capaz de convencerme de lo contrario.
+    - Deja que te muestre algo.
+    - "\"Tu especie tiene una cognici\xF3n de lo propio muy curiosa.  Cre\xE9is que
+      todo os pertenece por derecho.  Hab\xE9is arrasado con todo lo que hab\xE9is
+      querido y ahora llor\xE1is por el resultado de vuestras acciones.\""
+    - "\"Lo peor es que erais perfectamente conscientes de todo ello. Sab\xEDais
+      como solucionar el impacto creado sobre el medio ambiente. Pero estabais demasiado
+      ocupados ech\xE1ndole la culpa a cualquiera que no fueseis vosotros mismos
+      o neg\xE1ndolo por completo teniendo todas las pruebas en frente.\""
+    - "\"Hab\xE9is acabado con miles de especies. Pero en cambio, yo debo que tener
+      misericordia con la vuestra. Dime, \xBFpor qu\xE9 deber\xEDa perdonaros, ?\""
+    - "\"Cre\xE9is que mis hijos o yo misma somos el problema, el enemigo a combatir.
+      Pero durante mucho tiempo fuimos la soluci\xF3n, el aliado.  No hubi\xE9ramos
+      llegado a este punto, donde debes convencerme, si todos tus hermanos no hubieran
+      estado mirado para otro lado durante todo este tiempo.\""
+    - "\"Cuando terminemos esta conversaci\xF3n y salgas de aqu\xED, todo habr\xE1
+      terminado. Ser\xE1 vuestro final. Sin tu especie en esta tierra, el planeta
+      podr\xE1 recuperarse y volver a empezar.\""
+    - "\"Esto no tiene ning\xFAn sentido. No ten\xE9is salvaci\xF3n, no lo entender\xE9is
+      jam\xE1s. No conoc\xE9is la empat\xEDa, no existe la humildad en vosotros\u2026
+      S\xF3lo la desesperaci\xF3n por reconstruir algo que ya est\xE1 roto, como
+      el cascar\xF3n de un huevo.\""
+    - "Esto se acab\xF3. Cada cu\xE1l recoge lo que siembra. Adi\xF3s, hijo m\xEDo."
+    - "Ahora s\xE9 lo que debo hacer."
+    - "Si\xE9ntate por favor."
+    - "\xBFConoces el motivo por el cu\xE1l te he citado aqu\xED?"
+    - "Eso nos ahorrar\xE1 mucho tiempo, ."
+    - Deja que te muestre algo.
+    - "\"Tu especie tiene una cognici\xF3n de lo propio muy curiosa.  Cre\xE9is que
+      todo os pertenece por derecho.  Hab\xE9is arrasado con todo lo que hab\xE9is
+      querido y ahora llor\xE1is por el resultado de vuestras acciones.\""
+    - "\"Intrigante\u2026 \xBFNo te vas a defender? Entiendes que todo esto es para
+      convencerme, \xBFverdad? De lo contrario\u2026\""
+    - "\"No s\xE9 por qu\xE9 me dej\xE9 engatusar, no deber\xEDa mostrar tal piedad
+      con vosotros.  Hab\xE9is terminado con miles de especies, pero yo, en cambio,
+      voy a tener misericordia de una, la vuestra.  Dime, \xBFpor qu\xE9 deber\xEDa
+      perdonaros, ?\""
+    - "Si te declaras parte de m\xED\u2026 Comprendes que hab\xE9is estado luchando
+      y atac\xE1ndoos a vosotros mismos, \xBFno?"
+    - "\"Cierto\u2026 est\xE1 en vosotros. Ten\xE9is la inteligencia, los recursos,
+      la capacidad\u2026 pero no cooper\xE1is.  No segu\xEDs las reglas establecidas.
+      Pese a tener libre albedr\xEDo, os puede el ego\xEDsmo.  Por lo tanto, vuestro
+      mayor enemigo es y siempre ser\xE1\u2026\""
+    - "\"Vuestra libertad, las decisiones y acciones que hab\xE9is tomado os han
+      tra\xEDdo hasta aqu\xED.  Si yo no quisiera ponerle punto final a este desenfreno
+      de brutalidad, lo acabar\xEDais poniendo vosotros tarde o temprano.\""
+    - "Sab\xE9is lo que deb\xE9is hacer, ten\xE9is todos los medios a vuestro alcance.
+      Nosotros, todos juntos, somos uno."
+    - Lo dejo en tus manos, .
+    - "Elegid como deber\xEDais usar los recursos naturales para satisfacer las necesidades
+      de las generaciones presentes sin comprometer las necesidades de las generaciones
+      futuras."
+    - "Aprovechad esta oportunidad que os he brindado para mentalizaros y evitar
+      vuestra destrucci\xF3n."
+    - Recorred vuestro propio camino y encontrad al final el resultado de vuestras
+      acciones.
     options:
     - optionsLines:
-      - Opcion 1 Test
+      - "S\xED"
+      - No
     - optionsLines:
-      - Opcion 2A Test
-      - Opcion 2B Test
+      - "\xBFAgenda 2030?"
+      - Si, los conozco
+    - optionsLines:
+      - Hacemos lo que podemos
+    - optionsLines:
+      - "\xBFDe verdad quieres destruirnos?"
+      - "\xBFQui\xE9n eres?"
+    - optionsLines:
+      - "Necesit\xE1bamos esas materias primas"
+      - Era necesario para el progreso de la especie
+    - optionsLines:
+      - "Ignor\xE1bamos las consecuencias de nuestros actos"
+      - Podemos revertir nuestras acciones
+    - optionsLines:
+      - "Por favor, api\xE1date de nosotros"
+    - optionsLines:
+      - "\xBFHijo m\xEDo?"
+    - optionsLines:
+      - Biosfera
+    - optionsLines:
+      - Otra oportunidad
+    - optionsLines:
+      - "S\xED"
+    - optionsLines:
+      - "Tienes raz\xF3n"
+    - optionsLines:
+      - "Tambi\xE9n somos tus hijos"
+    - optionsLines:
+      - "Est\xE1 en nuestra naturaleza, as\xED es como somos"
+    - optionsLines:
+      - El ser humano
     answers:
+    - answerLines: []
     - answerLines:
-      - Respuesta 1 Test
+      - "Ya veo lo conscientes que sois al respecto\u2026 Las Naciones Unidas decidisteis
+        17 objetivos para poner fin a la pobreza extrema, garantizar los derechos
+        humanos y proteger el medio ambiente."
+      - 
+    - answerLines: []
     - answerLines:
-      - Respuesta 2A Test
-      - Respuesta 2B Test
+      - "En realidad sois vosotros mismos los que llev\xE1is a\xF1os intentando destruiros.
+        Yo s\xF3lo voy a poner el punto final."
+      - "\"Soy madre de la tierra que pisas. Del agua que bebes. Del aire que respiras
+        y de los frutos que te alimentan\u2026 Soy Gaia, Te Fiti, Gea, Pachamama...
+        Tengo muchos nombres.\""
+    - answerLines:
+      - "\"Eso no lo dudo, por eso os otorgu\xE9 unas fuentes abundantes. Sin embargo,
+        \xBFnunca pensasteis en devolver aquello que se os entreg\xF3? \xBFVolver
+        a plantar lo que seg\xE1is? \xBFPens\xE1is alguna vez en las vidas que no
+        son humanas? \xBFEn los animales y plantas que tambi\xE9n me habitan?\""
+      - "Con tal de evolucionar vosotros, os da exactamente igual lo qu\xE9 pase
+        con las dem\xE1s especies. Dime, \xBFes este el progreso que andabais buscando
+        y llegar al borde del colapso?"
+    - answerLines:
+      - "Por supuesto. Algo muy com\xFAn en vosotros, el no afrontar el problema
+        hasta que ya es demasiado tarde."
+      - "Interesante. \xBFY c\xF3mo pretend\xE9is hacerlo? \xBFCrees que recuperar
+        toda una biosfera es tarea f\xE1cil?"
+    - answerLines:
+      - "\"\xA1\xBFC\xF3mo lo hicisteis vosotros?!  \xBF\xA1Con las enfermedades
+        generadas por la contaminaci\xF3n, el deshielo de los casquetes polares y
+        la subida del nivel del mar, la deforestaci\xF3n o la caza y extinci\xF3n
+        de especies?!\""
+    - answerLines:
+      - "\"\xBFC\xF3mo no he ca\xEDdo antes?  Formo parte de ella. Los humanos fuimos
+        creados gracias a ella tambi\xE9n.\""
+    - answerLines:
+      - "Pertenecemos a la biosfera, formamos parte de ella. Tambi\xE9n nos hemos
+        destruido a nosotros mismos luchando entre nosotros. Contra nosotros y nuestro
+        hogar"
+    - answerLines:
+      - "\"Quer\xEDas que te convenciera, que nos dieras otra oportunidad.  Pero
+        no somos ajenos a la naturaleza, nosotros formamos parte de ella.  Parte
+        de ti.\""
+      - "Si a la naturaleza y al planeta les vas a dar otra oportunidad\u2026 A nosotros
+        tambi\xE9n deber\xEDas d\xE1rnosla."
+    - answerLines: []
+    - answerLines: []
+    - answerLines: []
+    - answerLines: []
+    - answerLines: []
   lenguageToCreate: Spanish
 --- !u!4 &2045968746
 Transform:

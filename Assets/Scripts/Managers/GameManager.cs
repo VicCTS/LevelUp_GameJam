@@ -63,8 +63,8 @@ public class GameManager : MonoBehaviour
 
     public void StartIntro()
     {
-        /*Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;*/
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         currentState = GameState.Intro;
 
@@ -73,19 +73,16 @@ public class GameManager : MonoBehaviour
         OnIntroStart();
 
         _timeLine.Play();
+
+        //Show_inGameCanvas();
     }
 
     public void StartGame()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-
-        currentState = GameState.Intro;
+        currentState = GameState.Talking;
 
         _menuCanvas.SetActive(false);
         _fadeCanvas.SetActive(true);
-
-        //Show_inGameCanvas();
 
         OnGameStart();
     }
@@ -95,9 +92,7 @@ public class GameManager : MonoBehaviour
         _menuCanvas.SetActive(false);
         
         _menuCamera.SetActive(false);
-        _mainCamera.SetActive(true);
-
-        
+        _mainCamera.SetActive(true);        
     }
 
     public void Hide_inGameCanvas()
