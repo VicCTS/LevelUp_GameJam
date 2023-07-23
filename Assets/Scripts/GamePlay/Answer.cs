@@ -17,6 +17,8 @@ public class Answer : MonoBehaviour
     [SerializeField] GameObject canvas;
     [SerializeField] Text textUI;
 
+    public bool selectable = true;
+
     void Start()
     {
         ChangeLenguage();

@@ -75,7 +75,7 @@ public class FPSCamera : MonoBehaviour
 
                 answerObject.ShowAnswer();
 
-                if(Input.GetMouseButtonDown(0))
+                if(Input.GetMouseButtonDown(0) && answerObject.selectable)
                 {
                     answerObject.AnswerQuestion();
                 }
