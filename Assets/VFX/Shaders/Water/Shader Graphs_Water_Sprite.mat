@@ -45,13 +45,13 @@ Material:
     m_Floats:
     - _Displacement: 0.31
     - _Mettalic: 1
-    - _PowerAlpha: 0.17
+    - _PowerAlpha: 0.11
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smooth: 0.786
+    - _Smooth: 0.7
     m_Colors:
-    - _ColorGlow: {r: 0, g: 0.80104715, b: 1, a: 1}
-    - _Scrolling_speed: {r: 0.1, g: -0.1, b: 0, a: 0}
+    - _ColorGlow: {r: 0, g: 1.1313709, b: 1.4142135, a: 1}
+    - _Scrolling_speed: {r: 0.3, g: -0.1, b: 0, a: 0}
     - _Tilling: {r: 7.4, g: 0.53, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &6680563204514971055

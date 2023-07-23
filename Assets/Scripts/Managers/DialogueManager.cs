@@ -10,6 +10,20 @@ public class DialogueManager : MonoBehaviour
 
     public static event Action OnAnswerWaiting;
 
+    public static event Action OnGeaAppears;
+    public static event Action OnGeaRO4A;
+    public static event Action OnGeaRO4B;
+    public static event Action OnGeaG9;
+    public static event Action OnGeaRO5A;
+    public static event Action OnGeaRO5B;
+    public static event Action OnGeaG11;
+    public static event Action OnGeaRO6A;
+    public static event Action OnGeaRO6B;
+    public static event Action OnGeaG13;
+    public static event Action OnGeaRO7;
+    public static event Action OnReset;
+    public static event Action OnEndGame;
+
     [SerializeField] AudioSource voiceAudioSource;
     [SerializeField] AudioClip[] textLinesAudios;
     [SerializeField] AudioClip[] answerLinesAudios;
@@ -68,6 +82,8 @@ public class DialogueManager : MonoBehaviour
 
 
     [SerializeField] Text textUI;
+
+    bool opcion10 = false;
 
     void OnEnable()
     {
@@ -128,20 +144,40 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeDialogue(float waitTimeNextFrase)
     {
-
-        voiceAudioSource.PlayOneShot(textLinesAudios[lineIndex]);
-
-        foreach (char character in textLines[lineIndex].ToCharArray())
+        
+        if(lineIndex == 36)
         {
-            textUI.text += character;
-            yield return new WaitForSeconds(textSpeed);
+            voiceAudioSource.PlayOneShot(textLinesAudios[lineIndex - 1]);
+
+            foreach (char character in textLines[lineIndex - 1].ToCharArray())
+            {
+                textUI.text += character;
+                yield return new WaitForSeconds(textSpeed);
+            }
+            
+            yield return new WaitForSeconds(textWaitTime);
+
+            textUI.text = string.Empty;
+
+            yield return new WaitForSeconds(waitTimeNextFrase);
+            }
+        else
+        {
+            voiceAudioSource.PlayOneShot(textLinesAudios[lineIndex]);
+
+            foreach (char character in textLines[lineIndex].ToCharArray())
+            {
+                textUI.text += character;
+                yield return new WaitForSeconds(textSpeed);
+            }
+            
+            yield return new WaitForSeconds(textWaitTime);
+
+            textUI.text = string.Empty;
+
+            yield return new WaitForSeconds(waitTimeNextFrase);
         }
         
-        yield return new WaitForSeconds(textWaitTime);
-
-        textUI.text = string.Empty;
-
-        yield return new WaitForSeconds(waitTimeNextFrase);
 
         ////////////////////////////////////////////////////////////////////////////////////////////////
         //Aqui tengo que haceer cosas
@@ -159,6 +195,7 @@ public class DialogueManager : MonoBehaviour
         else if(lineIndex == 5)
         {
             //1 Opcion
+            Debug.Log("1 Opcion");
 
             OnAnswerWaiting();
 
@@ -174,6 +211,7 @@ public class DialogueManager : MonoBehaviour
         else if(lineIndex == 7)
         {
             //2 Opcion
+            Debug.Log("2 Opcion");
 
             OnAnswerWaiting();
 
@@ -189,6 +227,7 @@ public class DialogueManager : MonoBehaviour
         else if(lineIndex == 8)
         {
             //3 Opcion
+            Debug.Log("3 Opcion");
 
             OnAnswerWaiting();
 
@@ -203,7 +242,10 @@ public class DialogueManager : MonoBehaviour
         }
         else if(lineIndex == 11)
         {
-            //3 Opcion
+            //4 Opcion
+            Debug.Log("4 Opcion");
+
+            OnGeaAppears();
 
             OnAnswerWaiting();
 
@@ -216,9 +258,17 @@ public class DialogueManager : MonoBehaviour
 
             lineIndex++;
         }
-        else if(lineIndex == 14)
+        else if(lineIndex == 12)
         {
-            //4 Opcion
+            OnGeaG9();
+
+            lineIndex++;  
+            StartCoroutine(TypeDialogue(0f));
+        }
+        else if(lineIndex == 13)
+        {
+            //5 Opcion
+            Debug.Log("5 Opcion");
 
             OnAnswerWaiting();
 
@@ -231,6 +281,156 @@ public class DialogueManager : MonoBehaviour
 
             lineIndex++;
         }
+        else if(lineIndex == 14)
+        {
+            OnGeaG11();
+
+            lineIndex++;  
+            StartCoroutine(TypeDialogue(0f));
+        }
+        else if(lineIndex == 15)
+        {
+            //6 Opcion
+            Debug.Log("6 Opcion");
+
+            OnAnswerWaiting();
+
+            GameManager.Instance.currentState = GameManager.GameState.Question;
+
+            foreach (GameObject answer in answers5)
+            {
+                answer.SetActive(true);
+            }
+
+            lineIndex++;
+        }
+        else if(lineIndex == 16)
+        {
+            OnGeaG13();
+
+            lineIndex++;  
+            StartCoroutine(TypeDialogue(0f));
+        }
+        else if(lineIndex == 17)
+        {
+            //7 Opcion
+            Debug.Log("7 Opcion");
+
+            OnAnswerWaiting();
+
+            GameManager.Instance.currentState = GameManager.GameState.Question;
+
+            foreach (GameObject answer in answers6)
+            {
+                answer.SetActive(true);
+            }
+
+            lineIndex++;
+        }
+        else if(lineIndex == 19)
+        {
+            //8 Opcion
+            Debug.Log("8 Opcion");
+
+            OnAnswerWaiting();
+
+            GameManager.Instance.currentState = GameManager.GameState.Question;
+
+            foreach (GameObject answer in answers7)
+            {
+                answer.SetActive(true);
+            }
+
+            //lineIndex++;
+        }
+        else if(lineIndex == 20)
+        {
+            OnReset();
+
+            lineIndex++;  
+            StartCoroutine(TypeDialogue(2));
+        }
+        else if(lineIndex == 22)
+        {
+            //////////////////////////////esto es despues del reset
+
+            OnAnswerWaiting();
+
+            GameManager.Instance.currentState = GameManager.GameState.Question;
+
+            foreach (GameObject answer in answers10)
+            {
+                answer.SetActive(true);
+            }
+
+            lineIndex++;
+        }
+        else if(lineIndex == 25)
+        {
+            //////////////////////////////esto es despues del reset
+
+            OnAnswerWaiting();
+
+            GameManager.Instance.currentState = GameManager.GameState.Question;
+
+            foreach (GameObject answer in answers11)
+            {
+                answer.SetActive(true);
+            }
+
+            lineIndex++;
+        }
+        else if(lineIndex == 27)
+        {
+            //////////////////////////////esto es despues del reset
+
+            OnAnswerWaiting();
+
+            GameManager.Instance.currentState = GameManager.GameState.Question;
+
+            foreach (GameObject answer in answers12)
+            {
+                answer.SetActive(true);
+            }
+
+            lineIndex++;
+        }
+        else if(lineIndex == 28)
+        {
+            //////////////////////////////esto es despues del reset
+
+            OnAnswerWaiting();
+
+            GameManager.Instance.currentState = GameManager.GameState.Question;
+
+            foreach (GameObject answer in answers13)
+            {
+                answer.SetActive(true);
+            }
+
+            lineIndex++;
+        }
+        else if(lineIndex == 29)
+        {
+            //////////////////////////////esto es despues del reset
+
+            OnAnswerWaiting();
+
+            GameManager.Instance.currentState = GameManager.GameState.Question;
+
+            foreach (GameObject answer in answers14)
+            {
+                answer.SetActive(true);
+            }
+
+            lineIndex++;
+        }
+        else if(lineIndex == 36)
+        {
+            //////////////////////////////fin del juego
+            OnEndGame();
+            
+        }
         else if(lineIndex < textLines.Length)
         {
             lineIndex++;  
@@ -240,12 +440,6 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.Log("Juego acabado?");
         }
-
-        /*if(lineIndex < textLines.Length)
-        {
-            lineIndex++;  
-            StartCoroutine("TypeDialogue");
-        }*/
     }
 
     public void StartAnswer(int questionNumber, int answerOption)
@@ -262,7 +456,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     voiceAudioSource.PlayOneShot(answerLinesAudios[0]);
                 }
-                StartCoroutine(TypeAnswer(answersLines1, answerOption, questionNumber));
+                StartCoroutine(TypeAnswer(answersLines1, answerOption, questionNumber, 0));
             break;
             case 2:
                 StartCoroutine(TypeDialogue(2f));
@@ -270,56 +464,59 @@ public class DialogueManager : MonoBehaviour
             case 3:
                 if(answerOption == 0)
                 {
+                    OnGeaRO4A();
                     voiceAudioSource.PlayOneShot(answerLinesAudios[1]);
                 }
                 else
                 {
+                    OnGeaRO4B();
                     voiceAudioSource.PlayOneShot(answerLinesAudios[2]);
                 }
-                StartCoroutine(TypeAnswer(answersLines3, answerOption, questionNumber));
+                StartCoroutine(TypeAnswer(answersLines3, answerOption, questionNumber, 0));
             break;
             case 4:
                 if(answerOption == 0)
                 {
+                    OnGeaRO5A();
                     voiceAudioSource.PlayOneShot(answerLinesAudios[3]);
                 }
                 else
                 {
+                    OnGeaRO5B();
                     voiceAudioSource.PlayOneShot(answerLinesAudios[4]);
                 }
-                StartCoroutine(TypeAnswer(answersLines4, answerOption, questionNumber));
+                StartCoroutine(TypeAnswer(answersLines4, answerOption, questionNumber,0 ));
             break;
             case 5:
                 if(answerOption == 0)
                 {
+                    OnGeaRO6A();
                     voiceAudioSource.PlayOneShot(answerLinesAudios[5]);
                 }
                 else
                 {
+                    OnGeaRO6B();
                     voiceAudioSource.PlayOneShot(answerLinesAudios[6]);
                 }
-                StartCoroutine(TypeAnswer(answersLines5, answerOption, questionNumber));
+                StartCoroutine(TypeAnswer(answersLines5, answerOption, questionNumber, 2));
             break;
             case 6:
+                OnGeaRO7();
                 voiceAudioSource.PlayOneShot(answerLinesAudios[7]);
-                StartCoroutine(TypeAnswer(answersLines6, answerOption, questionNumber));
+                StartCoroutine(TypeAnswer(answersLines6, answerOption, questionNumber, 0));
             break;
             case 7:
                 voiceAudioSource.PlayOneShot(answerLinesAudios[8]);
-                StartCoroutine(TypeAnswer(answersLines7, answerOption, questionNumber));
+                StartCoroutine(TypeAnswer(answersLines7, answerOption, questionNumber, 0));
             break;
             case 8:
                 voiceAudioSource.PlayOneShot(answerLinesAudios[9]);
-                StartCoroutine(TypeAnswer(answersLines8, answerOption, questionNumber));
+                StartCoroutine(TypeAnswer(answersLines8, answerOption, questionNumber, 0));
             break;
             case 9:
                 voiceAudioSource.PlayOneShot(answerLinesAudios[10]);
-                StartCoroutine(TypeAnswer(answersLines9, answerOption, questionNumber));
+                StartCoroutine(TypeAnswer(answersLines9, answerOption, questionNumber, 0));
             break;
-            /*case 10:
-                voiceAudioSource.PlayOneShot(answerLinesAudios[11]);
-                StartCoroutine(TypeAnswer(answersLines10, answerOption, questionNumber));
-            break;*/
             default:
                 StartCoroutine(TypeDialogue(2f));
             break;
@@ -327,7 +524,7 @@ public class DialogueManager : MonoBehaviour
     }
 
 
-    IEnumerator TypeAnswer(string[] answerText, int answerOption,int questionNum)
+    IEnumerator TypeAnswer(string[] answerText, int answerOption,int questionNum, float waitTimeNextFrase)
     {
 
         foreach (char character in answerText[answerOption].ToCharArray())
@@ -338,15 +535,77 @@ public class DialogueManager : MonoBehaviour
         yield return new WaitForSeconds(textWaitTime);
 
         textUI.text = string.Empty;
+
+        yield return new WaitForSeconds(waitTimeNextFrase);
         
-        if(questionNum == 9)
+        if(questionNum == 7)
         {
-            //el 0 es para no entrar en bucle
+            //Esto es la 9?
+            Debug.Log("9 Opcion");
+
+            OnAnswerWaiting();
+
+            GameManager.Instance.currentState = GameManager.GameState.Question;
+
+            foreach (GameObject answer in answers8)
+            {
+                answer.SetActive(true);
+            }
+        }
+        else if(questionNum == 8)
+        {
+            //10 Opcion
+            Debug.Log("10 Opcion");
+
+            OnAnswerWaiting();
+
+            GameManager.Instance.currentState = GameManager.GameState.Question;
+
+            foreach (GameObject answer in answers9)
+            {
+                answer.SetActive(true);
+            }
+
+            /*
+            if(!opcion10)
+            {
+                opcion10 = true;
+                StartCoroutine(TypeAnswer(answersLines9, 1, 8, 0));
+            }
+            else
+            {
+                Debug.Log("se a acabado la segunda respuesta 10");
+                lineIndex++;
+                StartCoroutine(TypeDialogue(0));
+            }*/
+            //voiceAudioSource.PlayOneShot(answerLinesAudios[11]);
+            //lineIndex++;
+            //StartCoroutine(TypeAnswer(answersLines9, 1, 0, 0));
+        }
+        else if(questionNum == 9)
+        {
+            //10 Opcion
+            /*Debug.Log("11 Opcion?");
+
+            OnAnswerWaiting();
+
+            GameManager.Instance.currentState = GameManager.GameState.Question;
+
+            foreach (GameObject answer in answers10)
+            {
+                answer.SetActive(true);
+            }*/
             voiceAudioSource.PlayOneShot(answerLinesAudios[11]);
-            StartCoroutine(TypeAnswer(answersLines10, 1, 0));
+            lineIndex++;
+            StartCoroutine(TypeAnswer(answersLines9, 1, 20, 0));
+        }
+        else if(questionNum == 20)
+        {
+            StartCoroutine(TypeDialogue(3));
         }
         else
         {
+            Debug.Log("comienza dialogo normal despues de una respuesta");
             StartCoroutine(TypeDialogue(0));
         }
           

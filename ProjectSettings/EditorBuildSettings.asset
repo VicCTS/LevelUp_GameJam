@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Testing Victor/Test1.unity
-    guid: 9f59bc19575efe440a13e5bfd0ede7c5
   - enabled: 1
     path: Assets/Scenes/PruebaDavid 1.unity
     guid: e50e6e2d5f3d47b41925786c3ee11ae8

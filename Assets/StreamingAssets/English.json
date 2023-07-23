@@ -1,0 +1,209 @@
+{
+    "mainMenuButtons": [
+        "Play",
+        "Options",
+        "Credits",
+        "Exit"
+    ],
+    "optionMenuButtons": [
+        "Back",
+        "Audio",
+        "Master",
+        "Voices",
+        "SFX",
+        "Music",
+        "Language",
+        "Sensitivity"
+    ],
+    "creditsMenuButtons": [
+        "Back"
+    ],
+    "textLines": [
+        "This is crazy… Is this a f*king joke?",
+        "I don't know why did she choose you. Although, honestly, I don't give a f*ck.",
+        "What's behind that door, you say? The only thing I know…",
+        "is that we are so f*cked up.",
+        "Please sit down.",
+        "Do you know the reason why I've quoted you here?",
+        "The reason it's quite simple.",
+        "The Sustainable Development Goals that you set for the “2030 Agenda” turned out to be deficient and leisurely.",
+        "Feeling that the state of the ecosystem matters little to you, I have decided to give you a serious reprisal for it.",
+        "Until you gain global awareness, small acts of faith will not heal the wound.",
+        "Since I see no such willingness to change in the short term.... I have decided to exterminate your kind.",
+        "Unless you are able to convince me otherwise.",
+        "Let me show you something.",
+        "Your kind has a very curious cognition of its own. You believe that everything rightfully belongs to you. You've devastated everything you've ever wanted, and now you grieve over the results of your actions.",
+        "The worst thing is you were perfectly aware of it all. You knew how to fix the footprint you created on the environment. But you were too busy blaming on anyone other than yourselves or denying it altogether, despite you have all the evidence in front of you.",
+        "You have annihilated thousands of species. But instead, I must have mercy on yours. Tell me, why should I forgive you, ",
+        "You think that my children or myself are the problem, the enemy who fight against. But for a long time we were the solution, the ally.  We would not have reached this point, where you must convince me, if all of your kind had not been looking away all this time.",
+        "By the time we finish this conversation, and you walk out of here, it will be over. It will be the end of yours.  Without your kind on earth, the planet will be able to recover and start all over again",
+        "This doesn't make any sense. You have no salvation, you will never understand. You know no empathy, there is no humility in you... Only the desperation to rebuild something that is already broken, like the shell of an egg.",
+        "This is over. Each one reaps what he sows. Goodbye, my son.",
+        "Now I know what I must do.",
+        "Please sit down.",
+        "Do you know the reason why I've quoted you here?",
+        "That will save us a lot of time.",
+        "Let me show you something.",
+        "Your kind has a very curious cognition of its own. You believe that everything rightfully belongs to you. You've devastated everything you've ever wanted, and now you grieve over the results of your actions.",
+        "Interesting... You're not going to stand up for yourself? You do understand that this is all to convince me, right? Otherwise...",
+        "I don't know why I let myself be tricked, I shouldn't show such mercy to your kind. You have annihilated thousands of species, but me, on the other hand, I will show mercy to one, humans. Tell me, why should I forgive you",
+        "If you claim to be part of me... You understand that you have been fighting and attacking yourselves, don't you?",
+        "Right... it's in you. You have the intelligence, the resources, the capability... but you don't work together. You don't follow the established rules. Although you have free will, you are driven by selfishness. Therefore, your greatest enemy is and always will be...",
+        "Your freedom, the decisions and actions you have taken have brought you here. If I didn't want to put a stop to this rampage of brutality, you would end up putting a stop to it sooner or later.",
+        "You know what you must do, you have all the means at your disposal. We, all together, are one",
+        "I leave it up to you.",
+        "Choose how you should use natural resources to meet the needs of present generations without compromising the needs of future ones.",
+        "Take advantage of this opportunity that I've given you to become mentally prepared and to avoid your destruction.",
+        "Take this opportunity I have kindly given to you in order to learn and prevent your destruction."
+    ],
+    "options": [
+        {
+            "optionsLines": [
+                "Yes",
+                "No"
+            ]
+        },
+        {
+            "optionsLines": [
+                "2030 Agenda?",
+                "Yes, I'm aware."
+            ]
+        },
+        {
+            "optionsLines": [
+                "We do our best."
+            ]
+        },
+        {
+            "optionsLines": [
+                "Do you really want to destroy us?",
+                "Who are you?"
+            ]
+        },
+        {
+            "optionsLines": [
+                "We needed those resources",
+                "It was necessary for the specie's progress"
+            ]
+        },
+        {
+            "optionsLines": [
+                "We were unaware of the consequences of our actions",
+                "We can reverse our actions"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Please have mercy on us"
+            ]
+        },
+        {
+            "optionsLines": [
+                "My son?"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Biosphere"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Another chance"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Yes"
+            ]
+        },
+        {
+            "optionsLines": [
+                "You are right"
+            ]
+        },
+        {
+            "optionsLines": [
+                "We are your children too"
+            ]
+        },
+        {
+            "optionsLines": [
+                "It's in our nature, that's how we are"
+            ]
+        },
+        {
+            "optionsLines": [
+                "The human being"
+            ]
+        }
+    ],
+    "answers": [
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": [
+                "I can see how conscious you are about it... The United Nations decided on 17 goals to end extreme poverty, guarantee human rights and protect the environment.",
+                ""
+            ]
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": [
+                "Actually, it is your kind who have been trying to destroy yourselves for years. I am just going to put an end to it.",
+                "I am the mother of the ground you walk on. Of the water you drink. Of the air you breathe and the fruits that feed you... I am Gaia, Te Fiti, Gea, Pachamama.... I have so many names."
+            ]
+        },
+        {
+            "answerLines": [
+                "I have no doubt about it,  that's why I gave you abundant sources. However, you never thought to give back the things that were given to you? To replant what you reaped? Do you ever think about the not-human lives? Or the animals and plants that also lives in me?",
+                "As long as you evolve, you don't care what happens to the other species. Tell me, is this the progress you were looking for, standing at the edge of collapse?"
+            ]
+        },
+        {
+            "answerLines": [
+                "Of course. Something very common in you guys, not facing the problem until it's too late.",
+                "Interesting, and how are you intending to do it? Do you think that recovering an entire biosphere is an easy task?"
+            ]
+        },
+        {
+            "answerLines": [
+                "The way your kind did it?!  With the diseases generated by pollution, melting ice caps and rising sea levels, deforestation or hunting and species extinction?!"
+            ]
+        },
+        {
+            "answerLines": [
+                "How I didn't get it before? I'm part of it. We, humans, were created by her too."
+            ]
+        },
+        {
+            "answerLines": [
+                "We belong to the biosphere, we are part of it. We have also destroyed ourselves by fighting against each other. Against us and our home."
+            ]
+        },
+        {
+            "answerLines": [
+                "You wanted me to convince you, to give us another chance. But we are not strangers to nature, we are part of it. Part of you",
+                "If you're going to give nature and the planet another chance... You should give us another chance too."
+            ]
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": []
+        }
+    ]
+}

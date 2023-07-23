@@ -8,9 +8,12 @@ public class FPSCamera : MonoBehaviour
     [SerializeField] float sensitivity = 200f;
 
     float xRotation = 0f;
-    float yRotation = 90f;
+    float yRotation = 0f;
     [SerializeField] Vector2 xLimit;
     [SerializeField] Vector2 yLimit;
+
+    [SerializeField] float lastXRotation;
+    [SerializeField] float lastYRotation;
 
     Answer lastAnswerSelected;
 
@@ -31,20 +34,28 @@ public class FPSCamera : MonoBehaviour
         if(GameManager.Instance.currentState == GameManager.GameState.Talking)
         {
             xRotation = 0f;
-            yRotation = 90f;
+            yRotation = 0f;
             CenterCamera();
         }         
     }
 
     void CenterCamera()
     {
-        float xPosition = fpsCamera.rotation.eulerAngles.x;
-        float yPosition = fpsCamera.rotation.eulerAngles.y;
+        lastXRotation = transform.localRotation.eulerAngles.x;
+        if(lastXRotation > 35.5f)
+        {
+            lastXRotation = lastXRotation - 360;
+        } 
+        lastYRotation = transform.localRotation.eulerAngles.y;
+        if(lastYRotation > 60.5f)
+        {
+            lastYRotation = lastYRotation - 360;
+        }
 
-        float lerpedXPosition = Mathf.Lerp(xPosition, 0, 0.1f);
-        float lerpedYPosition = Mathf.Lerp(yPosition, 180, 0.1f);
+        float lerpedlastXRotation = Mathf.Lerp(lastXRotation, 0, 0.1f);
+        float lerpedlastYRotation = Mathf.Lerp(lastYRotation, 0, 0.1f);
 
-        fpsCamera.rotation = Quaternion.Euler(lerpedXPosition, lerpedYPosition, 0);
+        transform.rotation = Quaternion.Euler(lerpedlastXRotation, lerpedlastYRotation, 0);
     }
 
     void CameraMovement()
@@ -52,13 +63,13 @@ public class FPSCamera : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
 
-        xRotation -= mouseY;
+        xRotation += mouseY;
         yRotation += mouseX;
 
         xRotation = Mathf.Clamp(xRotation, xLimit.x, xLimit.y);
         yRotation = Mathf.Clamp(yRotation, yLimit.x, yLimit.y);
 
-        fpsCamera.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
     }
 
     void CameraRayCast()

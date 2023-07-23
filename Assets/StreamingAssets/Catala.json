@@ -1,0 +1,209 @@
+{
+    "mainMenuButtons": [
+        "Jugar",
+        "Opcions",
+        "Crèdits",
+        "Sortir"
+    ],
+    "optionMenuButtons": [
+        "Enrere",
+        "So",
+        "Màster",
+        "Veus",
+        "SFX",
+        "Música",
+        "Idioma",
+        "Sensibilitat"
+    ],
+    "creditsMenuButtons": [
+        "Enrere"
+    ],
+    "textLines": [
+        "Això és una bogeria...  Quina mena de broma és aquesta?",
+        "No sé per què t'ha escollit a tu. Però, sincerament, tampoc m'importa gaire.",
+        "Qué hi ha darrera la porta, dius? Només sé...Qué hi ha darrera la porta, dius? Només sé...",
+        "Que amb tú estem ben fotuts.",
+        "Seu si us plau.",
+        "Coneixes el motiu pel qual t'he citat aquí?",
+        "El motiu és molt simple.",
+        "Els Objectius de Desenvolupament Sostenible que us vau fixar per a l'Agenda 2030, han resultat ser lents i insuficients.",
+        "Com sento que l'estat de l'ecosistema no us importa gens, he decidit donar-vos una represàlia greu per aquest motiu.",
+        "Mentre no obtingueu consciència a nivell global, els petits actes de bona fe no curarán les ferides.",
+        "Com no veig cap voluntat de canvi a curt termini... He decidit exterminar la vostra espècie.",
+        "Tret que siguis capaç de persuadir-me del contrari.",
+        "Deixa que t'ensenyi una cosa.",
+        "La teva espècie té una cognició d'allò propi un tant curiosa. Creieu que tot us pertany. Heu arrassat amb tot el que heu volgut y ara ploreu pel resultat de les vostres accions.",
+        "El pitjor és que éreu perfectament conscients de tot. Sabíeu com solucionar l'impacte esdevingut sobre el medi ambient. Però estàveu massa ocupats culpant a qualsevol que no fóssiu vosaltres mateixos o negant-ho completament tenint totes les proves al davant.",
+        "Heu acabat amb milers d'espècies. Però en canvi, jo he de tenir misericòrdia amb la vostra. Digues-me, per què us hauría de perdonar?",
+        "Creieu que els meus fills o jo mateixa som el problema, l'enemic a combatre. Però durant molt de temps vam ser la solució, l'aliat. No hauríem arribat a aquest punt, on m'has de convèncer, si tots els teus germans no haguessin estat mirant cap a un altra banda durant tot aquest temps.",
+        "Quan acabem aquesta conversa y surtis d'aquí, tot s'haurá acabat. Será el vostre final. Sense la teva espècie, el planeta podrá recuperarse, tornar a començar.",
+        "Això no té cap sentit. No teniu salvació, no ho entendreu mai. No coneixeu l'empatia, noexisteix la humilitat en vosaltres... Només la desesperació per reconstruir una cosa que ja està trancada, com la closca d'un ou.",
+        "S'ha acabat. Qui sembra, cull. Adéu, fill meu.",
+        "Ara sé el que he de fer",
+        "Seu si us plau.",
+        "Coneixes el motiu pel qual t'he citat aquí?",
+        "Això ens estalviarà un munt de temps.",
+        "Deixa que t'ensenyi una cosa.",
+        "La teva espècie té una cognició d'allò propi un tant curiosa. Creieu que tot us pertany. Heu arrassat amb tot el que heu volgut y ara ploreu pel resultat de les vostres accions.",
+        "Intrigant... No penses defensar-te? Entens que tot això és per persuadir-me, oi? En el cas contrari...",
+        "No sé encara per què estic fent això, no hauría de tenir pietat amb vosaltres. Heu acabat amb milers d'espècies, però ara en canvi, jo tindré misericòrdia amb una, la vostra. Digues-me, per què us hauría de perdonar?",
+        "Si et declares part de mi... Comprèns que heu estat lluitant i atacant-vos uns contra els altres, no? ",
+        "Cert, és a dins vostre. Teniu la intel·ligència, els recursos, la capacitat.. però no coopereu. No seguiu les regles establertes. Tot tenir lliure albir, us pot l'egoisme. Per tant, el vostre pitjor enemic és i sempre serà...",
+        "La vostra llibertat, les decisions y accions que heu pres us han dut fins aquí. Si jo no volgués posar-li el punt final a aquesta disbauxa de brutalitat, l'acabaríeu posant vosaltres tard o d'hora. ",
+        "Sabeu el que heu de fer, teniu tots els mtjans a l'abast. Nosaltres, tots plegats, sóm un. ",
+        "Ho deixo a les teves mans.",
+        "Escolliu com hauríeu d'emprar els recursos naturals per satisfer les necessitats de les presents generacions sense comprometre les necessitats de les generacions futures.",
+        "Aprofiteu aquesta oportunitat que us he posat sobre la taula per mentalitzar-vos i evitar la vostra destrucció.",
+        "Marxeu pel vostre propi camí i trobeu el resultat de les vostres accions."
+    ],
+    "options": [
+        {
+            "optionsLines": [
+                "Sí",
+                "No"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Agenda 2030?",
+                "Sí, els conec"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Fem el que podem"
+            ]
+        },
+        {
+            "optionsLines": [
+                "De debó vols destruir-nos?",
+                "Qui ets?"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Necessitàvem aquestes matèries primeres",
+                "Era necessari per al progrés de l'espècie"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Ignoràvem les conseqüències dels nostres actes",
+                "Podem revertir les nostres accions"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Si us plau, tingues pietat de nosaltres"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Fill meu?"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Biosfera"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Una altra oportunitat"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Sí"
+            ]
+        },
+        {
+            "optionsLines": [
+                "Tens tota la raó."
+            ]
+        },
+        {
+            "optionsLines": [
+                "També som els teus fills"
+            ]
+        },
+        {
+            "optionsLines": [
+                "És a dins nostre, així és com som"
+            ]
+        },
+        {
+            "optionsLines": [
+                "L'ésser humà"
+            ]
+        }
+    ],
+    "answers": [
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": [
+                "Ja veig com de concients que sou al respecte... Les Nacions Unides vau decidir 17 objectius per posar fi a la pobresa extrema, garantir els drets humans i protegir el medi ambient.",
+                ""
+            ]
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": [
+                "En realitat sou vosaltres mateixos els que porteu anys intentant destruir-vos. Jo només posaré el punt final.",
+                "Sóc la mare del terra que trepitges. De l'aigua que beus. De l'aire que respires i dels fruits que t'alimenten... Sóc Gaia, Te Fiti, Gea, Pachamama... Tinc molts noms."
+            ]
+        },
+        {
+            "answerLines": [
+                "Això no ho dubto, us vaig donar unes fonts ben abundants. No obstant, no vau pensar mai a tornar allò que se us va lliurar? En replantar el que recolliu? Penseu mai en les vides que no són humanes? En els animals i plantes que també m'habiten?",
+                "Per tal d'evolucionar vosaltres, tant se val el que passi amb les altres espècies. Digues-me, és aquest el progrés que anàveu buscant arribant a la vora del col·lapse?"
+            ]
+        },
+        {
+            "answerLines": [
+                "Per descomptat. Una cosa molt comuna en vosalres el no afrontar el problema fins que ja és massa tard.",
+                "Interesant. I com penseu fer-ho? Creus que recuperar tota una bioesfera és una tasca senzilla?"
+            ]
+        },
+        {
+            "answerLines": [
+                "Com ho vau fer vosaltres?! Amb les malalties generades per la contaminació, el desglaç dels casquets polars i la pujada del nivell del mar, la desforestació o la caça i extinció d'espècies?!"
+            ]
+        },
+        {
+            "answerLines": [
+                "Com no m'he adonat abans? En formo part d'ella. Els humans vam ser creats grpacies a ella, també."
+            ]
+        },
+        {
+            "answerLines": [
+                "Pertanyem a la biosfera, en formem part. Ens hem destruit a nosaltres mateixos lluitant entre nosaltres. Contra nosaltres i la nostra llar"
+            ]
+        },
+        {
+            "answerLines": [
+                "Volies que et persuadís, que ens donessis una altra oportunitat. Però no som aliens a la natura, nosaltres en formem part. Formem part de tu.",
+                "Si a la natura i al planeta els donarás una altra oportunitat... A nosaltres també ens la hauries de donar"
+            ]
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": []
+        },
+        {
+            "answerLines": []
+        }
+    ]
+}

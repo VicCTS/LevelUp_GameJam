@@ -53,7 +53,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Disolve_power: 3.65
-    - _Distancia_VectorMoving: -0.02
+    - _Distancia_VectorMoving: -0.18
     - _FrecuencyColorChange: 0.4
     - _Mask_Power: 1.08
     - _Nose_Scale: 30
@@ -63,7 +63,7 @@ Material:
     - _VectorMoving_Amount: 1
     - _VectorMoving_Frequency: 1.08
     m_Colors:
-    - _AuroraColor: {r: 10.159839, g: 20.865906, b: 2.1849117, a: 1}
+    - _AuroraColor: {r: 2.2941568, g: 20.865906, b: 19.95631, a: 1}
     - _Color2: {r: 1.4415036, g: 13.76636, b: 3.603759, a: 1}
     - _Speed_Noise: {r: 0, g: -0.025, b: 0, a: 0}
     - _Tiling_Noise: {r: 7, g: 0.1, b: 0, a: 0}
